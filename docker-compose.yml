@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    image: 22UG2-0123_app
+    container_name: web_app
+    restart: unless-stopped
+    networks:
+      - app_net
+    volumes:
+      - app_data:/data
+    ports:
+      - "5000:5000"
+
+networks:
+  app_net:
+    driver: bridge
+
+volumes:
+  app_data:
+
