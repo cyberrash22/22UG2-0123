@@ -11,7 +11,7 @@ fi
 if [ -f docker-compose.yml ]; then
   $DC up -d
 else
-  docker run -d --name web_app --network app_net --restart unless-stopped -v app_data:/data -p 5000:5000 22UG2-0123_app
+  docker run -d --name web_app --network app_net --restart unless-stopped -v app_data:/data -p 5000:5000 20180001_app
 fi
 
 echo "The app is available at http://localhost:5000"
