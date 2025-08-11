@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    image: 20180001_app   # replace 20180001 with your registration number
+    image: 22UG2-0123_app   
     container_name: web_app
     restart: unless-stopped
     networks:
