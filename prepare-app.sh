@@ -14,6 +14,6 @@ fi
 if [ -f docker-compose.yml ]; then
   $DC build
 else
-  docker build -t 20180001_app .  # replace with your registration number
+  docker build -t 20180001_app . 
 fi
 
